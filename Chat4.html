@@ -63,7 +63,7 @@
     </script>
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
-	var initESW = function (gslbBaseURL, membercode, language, brandmarket, matchstartdate, betslipid, nps) {
+	var initESW = function (gslbBaseURL, membercode, language, brandmarket, matchstartdate, betslipid, nps, HandshakeToken) {
         embedded_svc.settings.displayHelpButton = true; //Or false
         embedded_svc.settings.language = language; //For example, enter 'en' or 'en-US'
         embedded_svc.settings.waitingStateBackgroundImgURL = '';
@@ -184,6 +184,12 @@
                "value": nps,
                "displayToAgent": true,
                "transcriptFields": ["Nps_Requires__c"]
+            },
+	    {
+               "label": "HandshakeToken",
+               "value": HandshakeToken,
+               "displayToAgent": true,
+               "transcriptFields": ["HandshakeToken"]
             }
         ];
 
