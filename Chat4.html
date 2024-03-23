@@ -253,15 +253,19 @@
                     "doCreate": false,
                     "doFind": false,
                     "label": "Member Code"
-                },
-				   {
+                }]
+            },
+	    {
+                "entityName": "LiveChatTranscript",
+                "entityFieldMaps": [{
                     "isExactMatch": false,
                     "fieldName": "Handshake_Token__c",
                     "doCreate": false,
-                    "doFind": false,
+                    "doFind": true,
                     "label": "Handshake Token"
                 }]
             }
+	    
         ];
 
         embedded_svc.settings.defaultMinimizedText = onlineAgent; //(Defaults to Chat with an Expert)
