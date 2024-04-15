@@ -348,6 +348,7 @@
     };
 
 	if (!window.embedded_svc) {
+		console.log('inside iff');
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://omniverse--steindev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
@@ -355,6 +356,7 @@
 		};
 		document.body.appendChild(s);
 	} else {
+		console.log('inside elsse');
 		initESW('https://service.force.com', '1234','zh','FUN88-CNY','test','test','test','testToken');
 	}
 </script>
